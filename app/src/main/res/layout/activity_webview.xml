@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e7e7e7"
+    >
+    <com.huanyun.autocar.widget.CommonTitleBar
+        android:id="@+id/title_layout"
+        style="@style/head_default"
+        ></com.huanyun.autocar.widget.CommonTitleBar>
+    <LinearLayout
+        android:id="@+id/liner_main"
+        android:layout_below="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+    </LinearLayout>
+</RelativeLayout>
