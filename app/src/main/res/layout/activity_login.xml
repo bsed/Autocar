@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ykyin_white_normal">
+    <com.huanyun.autocar.widget.CommonTitleBar
+        android:id="@+id/title_layout"
+        style="@style/head_default"
+        />
+
+    <ImageView
+        android:id="@+id/logo_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/title_layout"
+        android:src="@drawable/qc"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/timepack_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logo_img"
+        android:textSize="@dimen/txt_size_40px"
+        android:textColor="#6e6e6e"
+        android:text="@string/app_name"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/xiangyin_tet_input_phone"
+        android:layout_below="@+id/timepack_name_text"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/xiangyin_edit_phone"
+            android:layout_width="match_parent"
+            android:inputType="phone"
+            android:textColor="@color/ykyin_black"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textSize="@dimen/txt_size_32px"
+            android:hint="请输入手机号"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/xiangyin_tet_input_pawd"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/xiangyin_tet_input_phone"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/xiangyin_edit_pwd"
+            android:layout_width="match_parent"
+            android:hint="请输入密码"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:textSize="@dimen/txt_size_32px"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/timepack_forget_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xiangyin_tet_input_pawd"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/txt_size_30px"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ykyin_back_select_bg"
+            android:textColor="#6e6e6e"
+            android:padding="10dp"
+            android:gravity="right"
+            android:text="忘记密码？"
+            />
+
+    <Button
+        android:id="@+id/xiangyin_login_but"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_90px"
+        android:layout_below="@+id/timepack_forget_tv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ykyin_btn_selector_corner_bg"
+        android:textColor="@color/ykyin_white"
+        android:textSize="@dimen/txt_size_30px"
+        android:text="登录"
+        />
+
+
+    <TextView
+        android:id="@+id/timepack_regist_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/txt_size_30px"
+        android:background="@drawable/ykyin_back_select_bg"
+        android:textColor="#6e6e6e"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:text="还没有账户？立即注册！"/>
+</RelativeLayout>

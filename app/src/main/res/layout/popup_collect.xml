@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#99000000"
+    android:gravity="center_vertical"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+
+        android:gravity="center_vertical"
+        >
+		<GridView
+			android:id="@+id/mGrid"
+			android:numColumns="3"
+			android:horizontalSpacing="3dp"
+			android:verticalSpacing="3dp"
+			android:layout_margin="8dp"
+            android:background="@drawable/popup_send_friends_circular_bead"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			></GridView>
+        <ImageView
+            android:id="@+id/delete_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pop_delete_icon"
+            android:layout_gravity="top|right"
+            android:padding="15dp"
+            />
+		</FrameLayout>
+
+
+
+</LinearLayout>
